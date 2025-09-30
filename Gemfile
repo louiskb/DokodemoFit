@@ -73,5 +73,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# Using Scooter's fork to workaround a bug in the Gem. Can be removed when it's fixed.
 gem "ruby_llm", git: 'https://github.com/SuzukiRyuichiro/ruby_llm.git'
 gem "devise"
