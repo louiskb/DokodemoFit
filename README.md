@@ -3,7 +3,7 @@ AI tool that creates workout routines and meal plans depending on goals and equi
 
 ## Technology Stack
 
-The app was built using Ruby on Rails, and uses the Ruby-LLM Gem to call to the OpenAI LLM provided by GitHub. The number of tokens is limited, so the tool will not work when under load. 
+The app was built using Ruby on Rails, and uses the Ruby-LLM Gem to call to the OpenAI LLM provided by GitHub. The number of tokens is limited, so the tool may not work when under load. 
 
 ## Contributors
 
