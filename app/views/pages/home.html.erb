@@ -1,9 +1,48 @@
-<div class="container-fluid m-auto3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg');
-background-size: cover;
-background-position: center;
-height: 90vh;">
-    <div style="padding: 30px 20px 0px 20px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))">
-        <h1 class="text-center mb-4 text-white">Dokodemo Fit</h1>
-        <h2 class="text-center mb-5 text-white">Create a fitness routine anywhere, anytime.</h2>
+<div class="hero-section">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-7 hero-content">
+        <h1 class="hero-title text-white">
+          Your Gym,<br>
+          Anywhere. <span class="text-warning">Dokodemo Fit!</span>
+        </h1>
+        <p class="hero-subtitle text-white">
+          Create personalized workout routines depending on your specific fitness goals and available equipment.
+        </p>
+
+        <div class="hero-actions mt-4 mb-5 justify-content-start">
+          <%= link_to "Join Now »", new_user_registration_path, class: "btn btn-primary btn-join" %>
+        </div>
+
+        <div class="hero-reviews mb-5">
+          <div class="avatars">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="avatar" alt="Reviewer">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar" alt="Reviewer">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="avatar" alt="Reviewer">
+            <div class="avatar avatar-plus">+</div>
+          </div>
+          <div class="review-text">
+            <div class="stars text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-white"><strong>1.7k</strong> reviews</span>
+          </div>
+        </div>
+
+        <div class="hero-tags">
+          <span class="hero-tag">Personal Training</span>
+          <span class="hero-tag">Strength</span>
+          <span class="hero-tag">Group Classes</span>
+          <span class="hero-tag">Running</span>
+          <span class="hero-tag">Swimming</span>
+          <span class="hero-tag">Cardio Equipment</span>
+          <span class="hero-tag">Functional Workouts</span>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
