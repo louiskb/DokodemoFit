@@ -1,1 +1,1 @@
-release: rails db:migrate
+release: bundle exec rails db:prepare
