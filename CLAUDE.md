@@ -61,3 +61,9 @@ A `Routine has_many :routine_exercises, has_many :exercises, through: :routine_e
 - `ENV.fetch("X", nil)` over `ENV["X"]` in application code — match existing style within a file unless refactoring it
 - `app/services/` holds AI orchestration; controllers stay thin
 - HTML responses from the AI are embedded directly into views — don't add a Markdown layer unless you also update the prompts
+
+## Heroku deactivation (2026-05-15)
+
+This app was deactivated to cut hosting spend (not maintained, not income-generating). On Heroku: `maintenance:on`, `web` scaled to 0, `heroku-postgresql:essential-0` add-on destroyed. App config and custom domains (`dokodemofit.app`, `www.dokodemofit.app`) are preserved. ACM-managed SSL cert will lapse around 2026-06-29 because Let's Encrypt's HTTP-01 challenge needs a running web dyno — reactivation triggers a fresh cert within minutes.
+
+**Reactivation procedure, DB dump, and config snapshot live in `~/code/chifury/heroku-backups/` (kept outside the repo because the config file contains secrets). See that directory's `README.md` for exact steps.**
